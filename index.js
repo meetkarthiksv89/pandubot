@@ -3,7 +3,7 @@
 // Imports dependencies and set up http server
 const questions = [{
     "question": "What kind of coffee are you looking to buy?",
-    "answers": ["Black Coffee", "Filter Coffee", "Coffee Decoction"]
+    "answers": ["Black Coffee", "Filter Coffee"]
 },
 {
     "question": "Would you prefer a blend with Chicory or just pure coffee? More chicory you add more storng your coffee will be.",
