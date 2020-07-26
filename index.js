@@ -304,9 +304,13 @@ function handleQuickReply(senderID, quickReply, messageId) {
     var quickReplyPayload = quickReply.payload;
     console.log("Current Payload" + quickReplyPayload)
 
-    if (quickReplyPayload.includes("Black Coffee")) {
+    // Uncomment to show the coffee
+    // if (quickReplyPayload.includes("Coffee Decoction")) {
+    //     showCoffeeDecoction(senderID)
+    // } else 
+    
+    if (quickReplyPayload.includes("Black Coffee") || quickReplyPayload.includes("Pure")) {
         showGrandAromaPure(senderID);
-        sendTextMessage(senderID, "Grand Aroma Pure")
     } else {
         var questionNumber = quickReplyPayload.split("_")[0]
         var payload = quickReplyPayload.split("_")[1]
@@ -350,17 +354,17 @@ function handleQuickReply(senderID, quickReply, messageId) {
 function showGrandAromaPure(senderID) {
     var elements = [{
         "title": "Grand Aroma",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
+        "image_url": "https://static.wixstatic.com/media/6c8eb8_c1a5491668ec4df5af2fa674c710de9b~mv2.png",
         "subtitle": "Pure Coffee",
         "default_action": {
             "type": "web_url",
-            "url": "https://petersfancybrownhats.com/view?item=103",
+            "url": "https://pandurangacoffee.com/products/grand-aroma",
             "webview_height_ratio": "tall",
         },
         "buttons": [
             {
                 "type": "web_url",
-                "url": "https://petersfancybrownhats.com",
+                "url": "https://pandurangacoffee.com/products/grand-aroma",
                 "title": "Buy"
             }
         ]
@@ -368,31 +372,10 @@ function showGrandAromaPure(senderID) {
     sendTemplateMessage(senderID, elements);
 }
 
-function showGrandAromaPure(senderID) {
+function showCoffeeDecoction(senderID) {
     var elements = [{
         "title": "Grand Aroma",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
-        "subtitle": "Pure Coffee",
-        "default_action": {
-            "type": "web_url",
-            "url": "https://petersfancybrownhats.com/view?item=103",
-            "webview_height_ratio": "tall",
-        },
-        "buttons": [
-            {
-                "type": "web_url",
-                "url": "https://petersfancybrownhats.com",
-                "title": "Buy"
-            }
-        ]
-    }];
-    sendTemplateMessage(senderID, elements);
-}
-
-function showGrandAromaPure(senderID) {
-    var elements = [{
-        "title": "Grand Aroma",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
+        "image_url": "https://static.wixstatic.com/media/6c8eb8_c1a5491668ec4df5af2fa674c710de9b~mv2.png",
         "subtitle": "Pure Coffee",
         "default_action": {
             "type": "web_url",
@@ -413,17 +396,17 @@ function showGrandAromaPure(senderID) {
 function showGrandAroma(senderID) {
     var elements = [{
         "title": "Grand Aroma",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
+        "image_url": "https://static.wixstatic.com/media/6c8eb8_c1a5491668ec4df5af2fa674c710de9b~mv2.png",
         "subtitle": "With 15% Chicory",
         "default_action": {
             "type": "web_url",
-            "url": "https://petersfancybrownhats.com/view?item=103",
+            "url": "https://pandurangacoffee.com/products/grand-aroma",
             "webview_height_ratio": "tall",
         },
         "buttons": [
             {
                 "type": "web_url",
-                "url": "https://petersfancybrownhats.com",
+                "url": "https://pandurangacoffee.com/products/grand-aroma",
                 "title": "Buy"
             }
         ]
@@ -434,17 +417,17 @@ function showGrandAroma(senderID) {
 function showBrownGold(senderID) {
     var elements = [{
         "title": "Brown Gold",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
+        "image_url": "https://static.wixstatic.com/media/6c8eb8_7cff39d12abd454ea7490e298fa4cf89~mv2.png",
         "subtitle": "15% Chicory",
         "default_action": {
             "type": "web_url",
-            "url": "https://petersfancybrownhats.com/view?item=103",
+            "url": "https://pandurangacoffee.com/collections/frontpage/products/brown-gold",
             "webview_height_ratio": "tall",
         },
         "buttons": [
             {
                 "type": "web_url",
-                "url": "https://petersfancybrownhats.com",
+                "url": "https://pandurangacoffee.com/collections/frontpage/products/brown-gold",
                 "title": "Buy"
             }
         ]
@@ -455,17 +438,17 @@ function showBrownGold(senderID) {
 function showAromaGold(senderID) {
     var elements = [{
         "title": "Aroma Gold",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
+        "image_url": "https://static.wixstatic.com/media/6c8eb8_4082ce662e7d42d48d8c0f976cabe89b~mv2.png",
         "subtitle": "30% Chicory",
         "default_action": {
             "type": "web_url",
-            "url": "https://petersfancybrownhats.com/view?item=103",
+            "url": "https://pandurangacoffee.com/products/aroma-gold",
             "webview_height_ratio": "tall",
         },
         "buttons": [
             {
                 "type": "web_url",
-                "url": "https://petersfancybrownhats.com",
+                "url": "https://pandurangacoffee.com/products/aroma-gold",
                 "title": "Buy"
             }
         ]
@@ -476,17 +459,17 @@ function showAromaGold(senderID) {
 function showFrenchBlend(senderID) {
     var elements = [{
         "title": "French Blend",
-        "image_url": "https://petersfancybrownhats.com/company_image.png",
+        "image_url": "https://static.wixstatic.com/media/6c8eb8_c0161dfa3e4949e2aac78c719ad9a4a2~mv2.png",
         "subtitle": "30% Chicory",
         "default_action": {
             "type": "web_url",
-            "url": "https://petersfancybrownhats.com/view?item=103",
+            "url": "https://pandurangacoffee.com/products/french-blend",
             "webview_height_ratio": "tall",
         },
         "buttons": [
             {
                 "type": "web_url",
-                "url": "https://petersfancybrownhats.com",
+                "url": "https://pandurangacoffee.com/products/french-blend",
                 "title": "Buy"
             }
         ]
